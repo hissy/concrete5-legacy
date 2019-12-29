@@ -177,10 +177,10 @@ module.exports = function(grunt) {
 	});
 
 	var buildTranslationParameters = extend({}, parameters);
-	buildTranslationParameters.destination = './release/concrete5-legacy-master/web';
+	buildTranslationParameters.destination = './release/concrete5-legacy-patch-5.6.3.5.1/web';
 
 	var buildTagParameters = extend({}, parameters);
-	buildTagParameters.source = './release/concrete5-legacy-master/web';
+	buildTagParameters.source = './release/concrete5-legacy-patch-5.6.3.5.1/web';
 
 	grunt.registerTask('build-release-translations', 'Downloading Translations.', function() {
 		require('./tasks/translations.js')(grunt, config, buildTranslationParameters, this.async());
